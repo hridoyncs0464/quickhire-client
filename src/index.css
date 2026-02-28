@@ -42,3 +42,18 @@ body {
 .btn-primary:hover {
   background-color: #3730a3;
 }
+
+/* ── Marquee Animation ── */
+.marquee-track {
+  animation: marquee-scroll 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
